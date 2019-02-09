@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import {APP_BASE_HREF, HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,10 @@ import { ContactMeComponent } from './pages/contact-me/contact-me.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
