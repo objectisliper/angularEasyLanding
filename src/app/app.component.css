@@ -1,0 +1,82 @@
+.active-route{
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
+.background-paralax-image{
+  /* The image used */
+  background-image: url("../assets/190237.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-paralax-image h1{
+  font-family: FANTASY;
+  color: white;
+  border: 1px solid;
+  background-color: rgba(0,0,0,0.6);
+  font-size: 65px;
+  padding: 40px 0px;
+  width: 100%;
+  text-align: center;
+  border-left: unset;
+  border-right: unset;
+}
+
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+
+.fab:before {
+  font-size: 60px;
+}
+
+.fab{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer{
+  background-color: #f8f9fa;
+  padding: 10px 0px;
+}
+
+footer .author-rights{
+  display: flex;
+  align-items: center;
+}
+
+.footer-container .col-4:nth-child(2){
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container .col-4:nth-child(3){
+  display: flex;
+  justify-content: flex-end;
+}
